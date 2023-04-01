@@ -1,0 +1,9 @@
+{
+  "extends": "@ss1gg/tsconfig",
+  "compilerOptions": {
+    "outDir": ".dist",
+  },
+  "include": [
+    "src"
+  ]
+}

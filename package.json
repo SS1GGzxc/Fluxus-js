@@ -1,0 +1,48 @@
+{
+  "name": "fluxus-js",
+  "version": "0.0.4",
+  "description": "",
+  "type": "module",
+  "main": "./.dist/index.js",
+  "bin": {
+    "fluxusServer": "./.dist/watcher/server.js",
+    "fluxusDev": "./.dist/watcher/cli.js",
+    "fluxusBuild": "./.dist/builder/cli.js",
+    "create-fluxus-app": "./.dist/createApp/cli.js"
+  },
+  "files": [
+    ".dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "npx fluxusDev ./src/main.ts",
+    "build": "npx fluxusBuild"
+  },
+  "keywords": [
+    "JS",
+    "Framework",
+    "HTML"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SS1GGzxc/Fluxus.js"
+  },
+  "homepage": "https://github.com/SS1GGzxc/Fluxus.js#readme",
+  "author": "SS1GGzxc",
+  "license": "MIT",
+  "devDependencies": {
+    "@ss1gg/tsconfig": "^1.1.0",
+    "@types/express": "^4.17.17",
+    "@types/listr": "^0.14.4",
+    "@types/node": "^18.15.3"
+  },
+  "dependencies": {
+    "execa": "7.1.1",
+    "express": "4.18.2",
+    "listr": "0.14.3",
+    "webpack": "5.76.2",
+    "webpack-cli": "5.0.1",
+    "typescript": "4.9.5"
+  }
+}
